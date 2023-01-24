@@ -1,0 +1,246 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "year": 1930,
+            "champion": "Uruguay",
+            "runner_up": "Argentina",
+            "third_place": "United States",
+            "host": "Uruguay",
+            "teams": 13,
+            "matches_played": 16,
+            "goals": 70
+        },
+        {
+            "id": 2,
+            "year": 1934,
+            "champion": "Italy",
+            "runner_up": "Czechia",
+            "third_place": "Germany",
+            "host": "Italy",
+            "teams": 16,
+            "matches_played": 17,
+            "goals": 70
+        },
+        {
+            "id": 3,
+            "year": 1938,
+            "champion": "Italy",
+            "runner_up": "Hungary",
+            "third_place": "Brazil",
+            "host": "France",
+            "teams": 15,
+            "matches_played": 18,
+            "goals": 84
+        },
+        {
+            "id": 4,
+            "year": 1950,
+            "champion": "Uruguay",
+            "runner_up": "Brazil",
+            "third_place": "Sweden",
+            "host": "Brazil",
+            "teams": 13,
+            "matches_played": 22,
+            "goals": 88
+        },
+        {
+            "id": 5,
+            "year": 1954,
+            "champion": "Germany",
+            "runner_up": "Hungary",
+            "third_place": "Austria",
+            "host": "Switzerland",
+            "teams": 16,
+            "matches_played": 26,
+            "goals": 140
+        },
+        {
+            "id": 6,
+            "year": 1958,
+            "champion": "Brazil",
+            "runner_up": "Sweden",
+            "third_place": "France",
+            "host": "Sweden",
+            "teams": 16,
+            "matches_played": 35,
+            "goals": 126
+        },
+        {
+            "id": 7,
+            "year": 1962,
+            "champion": "Brazil",
+            "runner_up": "Czechia",
+            "third_place": "Chile",
+            "host": "Chile",
+            "teams": 16,
+            "matches_played": 32,
+            "goals": 89
+        },
+        {
+            "id": 8,
+            "year": 1966,
+            "champion": "England",
+            "runner_up": "Germany",
+            "third_place": "Portugal",
+            "host": "England",
+            "teams": 16,
+            "matches_played": 32,
+            "goals": 89
+        },
+        {
+            "id": 9,
+            "year": 1970,
+            "champion": "Brazil",
+            "runner_up": "Italy",
+            "third_place": "Germany",
+            "host": "Mexico",
+            "teams": 16,
+            "matches_played": 32,
+            "goals": 95
+        },
+        {
+            "id": 10,
+            "year": 1974,
+            "champion": "Germany",
+            "runner_up": "Netherlands",
+            "third_place": "Poland",
+            "host": "West Germany",
+            "teams": 16,
+            "matches_played": 38,
+            "goals": 97
+        },
+        {
+            "id": 11,
+            "year": 1978,
+            "champion": "Argentina",
+            "runner_up": "Netherlands",
+            "third_place": "Brazil",
+            "host": "Argentina",
+            "teams": 16,
+            "matches_played": 38,
+            "goals": 102
+        },
+        {
+            "id": 12,
+            "year": 1982,
+            "champion": "Italy",
+            "runner_up": "Germany",
+            "third_place": "Poland",
+            "host": "Spain",
+            "teams": 24,
+            "matches_played": 52,
+            "goals": 146
+        },
+        {
+            "id": 13,
+            "year": 1986,
+            "champion": "Argentina",
+            "runner_up": "Germany",
+            "third_place": "France",
+            "host": "Mexico",
+            "teams": 24,
+            "matches_played": 52,
+            "goals": 132
+        },
+        {
+            "id": 14,
+            "year": 1990,
+            "champion": "Germany",
+            "runner_up": "Argentina",
+            "third_place": "Italy",
+            "host": "Italy",
+            "teams": 24,
+            "matches_played": 52,
+            "goals": 115
+        },
+        {
+            "id": 15,
+            "year": 1994,
+            "champion": "Brazil",
+            "runner_up": "Italy",
+            "third_place": "Sweden",
+            "host": "United States",
+            "teams": 24,
+            "matches_played": 52,
+            "goals": 141
+        },
+        {
+            "id": 16,
+            "year": 1998,
+            "champion": "France",
+            "runner_up": "Brazil",
+            "third_place": "Croatia",
+            "host": "France",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 171
+        },
+        {
+            "id": 17,
+            "year": 2002,
+            "champion": "Brazil",
+            "runner_up": "Germany",
+            "third_place": "Turkey",
+            "host": "South Korea",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 161
+        },
+        {
+            "id": 18,
+            "year": 2006,
+            "champion": "Italy",
+            "runner_up": "France",
+            "third_place": "Germany",
+            "host": "Germany",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 147
+        },
+        {
+            "id": 19,
+            "year": 2010,
+            "champion": "Spain",
+            "runner_up": "Netherlands",
+            "third_place": "Germany",
+            "host": "South Africa",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 145
+        },
+        {
+            "id": 20,
+            "year": 2014,
+            "champion": "Germany",
+            "runner_up": "Argentina",
+            "third_place": "Netherlands",
+            "host": "Brazil",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 171
+        },
+        {
+            "id": 21,
+            "year": 2018,
+            "champion": "France",
+            "runner_up": "Croatia",
+            "third_place": "Belgium",
+            "host": "Russia",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 169
+        },
+        {
+            "id": 22,
+            "year": 2022,
+            "champion": "Argentina",
+            "runner_up": "France",
+            "third_place": "Croatia",
+            "host": "Qatar",
+            "teams": 32,
+            "matches_played": 64,
+            "goals": 172
+        }
+    ]
+}
