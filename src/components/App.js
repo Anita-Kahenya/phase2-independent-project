@@ -1,26 +1,27 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import NavBar from "./NavBar";
+import NavBar from './NavBar';
 import Home from "./Home";
 import About from './About';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
+    <div>
+      
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
-      </Router>,
-      node
+        <NavBar/>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+      </Router>
     </div>
   );
 }
-
+        /*
+        <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+        */
 export default App;

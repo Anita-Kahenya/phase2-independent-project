@@ -5,22 +5,42 @@ function NavBar() {
   return(
     <div className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="#">Navbar</a>
-      <div >
-        <Router>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/about'>About</NavLink>
-        </Router>
-    </div>
+      <div>
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <NavLink className="nav-link" to='/' style={isActive => ({
+              color: isActive ? "gold" : "white"
+              })}>
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to='/about' style={isActive => ({
+              color: isActive ? "gold" : "white"
+              })}>
+              About
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </div>
   ) 
 }
-/*<ul className="navbar-nav mr-auto">
+/*  <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">Navbar</a>
+      <div >
+         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a class="nav-link" href="#">Home </a>
+            <a className="nav-link" href="http://localhost:3000/#">Home </a>
           </li>
           <li className="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a className="nav-link" href="http://localhost:3000/#/about">About</a>
           </li>
-        </ul>*/
+        </ul>
+      </div>
+    </div>
+
+         
+        */
 
 export default NavBar;
