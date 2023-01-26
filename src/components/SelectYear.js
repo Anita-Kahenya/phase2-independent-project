@@ -1,49 +1,56 @@
-import React,{ useState } from "react";
-import Finalists from './Finalists.js';
+import React from "react";
 
-function SelectYear({ tournaments, setTournaments }){
-    const [finalists, setFinalists] = useState([])
-    const [game, setGame] = useState([])
-
+function SelectYear({ handleSearch }){
+    
     const handleOnChange = (e)=> {
-        const id = e.target.value;
-        const tournament = tournaments.find(tournament => tournament.id === id)
-        //const gameCard = game.find(tournament => tournament.id === id)
-        setGame([game, tournament])
-        console.log(game)
+        e.preventDefault()
+        const year = e.target.value
+        console.log(year)
     }
-
-    const setFinalistCard = (id)=>{
-        
-    }
+    
     return(
-        <>
         <div  className="input-group mb-3" id='searchBar'>
+            <form className='row' onSubmit={handleSearch}>
             <div className="input-group-prepend">
-                <label className="input-group-text" for="inputGroupSelect01">Select Year</label>
+                <label className="input-group-text" htmlFor="inputGroupSelect01">Select Year</label>
             </div>
-            <select onChange={handleOnChange} className="custom-select search-field" id="inputGroupSelect01">
-            {
-                tournaments.map((tournament, index)=>{
-                    return( 
-                        <option  tournament={tournament} key={index} value={tournament.id}>{tournament.year}</option>
-                    )
-                })
-            }  
+            <select type='search' onChange={handleSearch} className="form-control custom-select search-field" id="inputGroupSelect01">
+                <option value='2022' >2022</option>
+                <option value='2018' >2018</option>
+                <option value='2014' >2014</option>
+                <option value='2014' >2014</option>
+                <option value='2010' >2010</option>
+                <option value='2006' >2006</option>
+                <option value='2002' >2002</option>
+                <option value='1998' >1998</option>
+                <option value='1994' >1994</option>
+                <option value='1990' >1990</option>
+                <option value='1986' >1986</option>
+                <option value='1982' >1982</option>
+                <option value='1978' >1978</option>
+                <option value='1974' >1974</option>
+                <option value='1970' >1970</option>
+                <option value='1966' >1966</option>
+                <option value='1962' >1962</option>
+                <option value='1958' >1958</option>
+                <option value='1954' >1954</option>
+                <option value='1950' >1950</option>
+                <option value='1938' >1938</option>
+                <option value='1934' >1934</option>
+                <option value='1930' >1930</option>
             </select>
             <div id="button">
                 <button id="button"
                     type="submit" 
                     className="btn btn-primary"
-                    onClick={ setFinalistCard }
+                    onClick={handleOnChange}
                     >
                     See Finalists
                 </button>
             </div>
+            </form>    
         </div>
-    <Finalists games={game}/>
-    </>
     )
 }
-/*onClick={()=> setFinalistCard(tournament.id)} */
+
 export default SelectYear;
