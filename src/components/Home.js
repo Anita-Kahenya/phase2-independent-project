@@ -25,5 +25,5 @@ function Home(){
         </div>
     )
 }
-//`${id}`
+
 export default Home;
