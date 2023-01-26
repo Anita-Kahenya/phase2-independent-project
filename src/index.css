@@ -5,8 +5,18 @@
 #searchBar{
   padding: 10px;
   background-color: #49BCE3;
+  display: flex;
+  justify-content: center;
 }
 
 .search-field{
   width: 85vw;
+}
+
+#button{
+  padding: 5px;
+}
+.card{
+  
+  text-align: center;
 }

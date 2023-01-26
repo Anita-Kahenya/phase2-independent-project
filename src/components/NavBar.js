@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return(
     <div className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">Navbar</a>
+      <a className="navbar-brand" href="#">NavBar</a>
       <div>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
@@ -26,21 +26,4 @@ function NavBar() {
     </div>
   ) 
 }
-/*  <div className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">Navbar</a>
-      <div >
-         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="http://localhost:3000/#">Home </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="http://localhost:3000/#/about">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-         
-        */
-
 export default NavBar;

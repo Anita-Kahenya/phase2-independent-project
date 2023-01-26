@@ -12,8 +12,7 @@ function Home(){
     }, [])
     return(
         <div>
-            <SelectYear tournaments = {tournaments}/>
-            <Finalists/>
+            <SelectYear setTournaments={ setTournaments } tournaments = {tournaments} />
             <WinnerCard/>
         </div>
     )

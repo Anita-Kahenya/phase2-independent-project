@@ -16,12 +16,4 @@ function App() {
     </div>
   );
 }
-        /*
-        <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-        */
 export default App;
