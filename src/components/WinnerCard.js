@@ -16,7 +16,7 @@ function WinnerCard({ finals, setDisplay }){
                                 
             </span>
             <div>
-                    <button className="btn btn-primary" onClick={() =>{setDisplay("matches")}}> return</button> 
+                <button className="btn btn-outline-primary" onClick={() =>{setDisplay("matches")}}><i class="fa-solid fa-arrow-right-to-bracket"></i></button> 
             </div> 
        </div>
     )
