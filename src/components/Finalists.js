@@ -1,33 +1,17 @@
 import React from "react";
+import Cards from "./Cards";
 
-function Finalists({tournaments, setDisplay, setFinalsToDisplay, container}){
-    function handleClick(){
-        if(!container) {
-            setMatchesToDisplay(tournaments)
-            setDisplay("specs")
-        } else {
-            removeFromArmy(bot)
-        }
-    }
+function Finalists({tournaments, setDisplay, setFinalsToDisplay}){
+
+    const finalistDisplay = tournaments.map(tournament => <Cards setDisplay={setDisplay} 
+            setFinalsToDisplay={setFinalsToDisplay} 
+            tournament={tournament} 
+            key={tournament.id}/>
+        )
     return(
-        <div className="card row displayField cardField" onClick={handleClick}>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
-            {
-                tournaments.map((champion)=>{
-                    return(
-                        <div key={champion.id} className='col-sm-2'>
-                            <span className="card" >
-                                <h1>{champion.year}</h1>
-                                <h2>{champion.champion}</h2>Vs
-                                <h2>{champion.runner_up}</h2>
-                            </span>
-                       </div>   
-                    )
-                })
-            }
-            </div>
-        </div>
+        <>
+            {finalistDisplay}
+        </>
     )
 }
-
 export default Finalists;

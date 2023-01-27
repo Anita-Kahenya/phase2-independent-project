@@ -27,23 +27,19 @@ function Home(){
         setGames([...games, finalist])
         console.log(games)
     }
-    const finalistDisplay = tournaments.map(tournament => <Finalists setDisplay={setDisplay} 
-        setFinalsToDisplay={setFinalsToDisplay} 
-        tournament={tournament} 
-        key={tournament.id}/>
-        )
-        
+    /**/
+
     return(
         <div>
             <SelectYear tournaments = {tournaments} handleSearch={handleSearch}/>
             {
-                display === "collection" ? 
-                {finalistDisplay}
+                display === "matches" ? 
+                <Finalists setDisplay={setDisplay} setFinalsToDisplay={setFinalsToDisplay} tournaments={tournaments} />         
                  : 
                 <WinnerCard setDisplay={setDisplay} finals={finalsToDisplay}  /> 
             }
         </div>
     )
 }
-
+/* */
 export default Home;

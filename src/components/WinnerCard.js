@@ -1,6 +1,6 @@
 import React from "react";
 
-function WinnerCard({ finals }){
+function WinnerCard({ finals, setDisplay }){
     const {year, champion, runner_up, third_place, host, teams, matches_played, goals} = finals
     return(
         <div className="card">
@@ -13,7 +13,10 @@ function WinnerCard({ finals }){
                                 <h2>Teams: {teams}</h2>
                                 <h2>Matches Played: {matches_played}</h2>
                                 <h2>Total Goals Scored: {goals}</h2>
-            </span>  
+                <div>
+                    <button className="btn btn-primary" onClick={() => {setDisplay("collection")}}> return</button> 
+                </div>                 
+            </span> 
        </div>
     )
 }
