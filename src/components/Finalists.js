@@ -10,7 +10,11 @@ function Finalists({tournaments, setDisplay, setFinalsToDisplay}){
         )
     return(
         <>
+            <div className="card row displayField cardField" >
+            <div className="row row-cols-1 row-cols-md-4 g-4">
             {finalistDisplay}
+            </div>
+            </div>
         </>
     )
 }

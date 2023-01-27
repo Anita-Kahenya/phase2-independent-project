@@ -1,4 +1,5 @@
-function Cards({tournament, setDisplay, setFinalsToDisplay, key, container}){
+import { useEffect, useState } from "react";
+function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
     const {year,champion,runner_up} = tournament;
     
     function handleClick(){
@@ -9,18 +10,21 @@ function Cards({tournament, setDisplay, setFinalsToDisplay, key, container}){
             console.log(tournament)
         }
     }
+    const [flag, setFlag] = useState("")
+    /*useEffect(()=>{
+        fetch(`https://restcountries.com/v2/name/{name}?fullText=true`)
+        .then((res) => res.image())
+        .then((data) => setFlag(data))
+    }, [])*/
     return(
-        <div className="card row displayField cardField" >
-            <div className="row row-cols-1 row-cols-md-4 g-4">
+        
                 <div className='col-sm-2'>
-                            <span key={key} className="card" onClick={handleClick}>
+                            <span  className="card" onClick={handleClick}>
                                 <h1>{year}</h1>
-                                <h2>{champion}</h2>Vs
+                                <h2><span><img src='https://flagcdn.com/16x12/ke/png' alt='flag'></img></span>{champion}</h2>Vs
                                 <h2>{runner_up}</h2>
                             </span>
                 </div>   
-            </div>
-        </div>
     )
 }
 /* 
