@@ -18,13 +18,13 @@ function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
     }, [])*/
     return(
         
-                <div className='col-sm-2'>
-                            <span  className="card" onClick={handleClick}>
-                                <h1>{year}</h1>
-                                <h2><span><img src='https://flagcdn.com/16x12/ke/png' alt='flag'></img></span>{champion}</h2>Vs
-                                <h2>{runner_up}</h2>
-                            </span>
-                </div>   
+        <div className='col-sm-2'>
+            <span  className="card" onClick={handleClick}>
+                <h1>{year}</h1>
+                <h2><span><img src='https://flagcdn.com/16x12/ke/png' alt='flag'></img></span>{champion}</h2>Vs
+                <h2>{runner_up}</h2>
+            </span>
+        </div>   
     )
 }
 /* 
