@@ -10,11 +10,10 @@ function Finalists({tournaments, setDisplay, setFinalsToDisplay}){
         )
     return(
         <>
-            <div className="container" >
+            <div className="container">
             {finalistDisplay}
             </div>
         </>
     )
 }
-/*row row-cols-4 row-cols-md-4 g-4 */
 export default Finalists;

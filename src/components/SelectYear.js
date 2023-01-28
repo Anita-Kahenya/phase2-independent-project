@@ -1,21 +1,14 @@
 import React from "react";
 
 function SelectYear({ handleSearch }){
-    
-    /*const handleOnChange = (e)=> {
-        e.preventDefault()
-        const year = e.target.value
-        console.log(year)
-    }*/
-    
     return(
         <div  className="input-group mb-3" id='searchBar'>
             <form className='row' onSubmit={handleSearch}>
             <div className="input-group-prepend">
-            </div>    
-                <label className="input-group-text" htmlFor="inputGroupSelect01">Select Year
-            
-            <select type='search' onChange={handleSearch} className="form-control custom-select search-field" id="inputGroupSelect01">
+                <label className="input-group-text" htmlFor="inputGroupSelect01">Select Year</label>
+            </div> 
+            <div> 
+            <select type='search' onChange={handleSearch} className="form-control custom-select search-field" name="searchbar" id="inputGroupSelect01">
                 <option value='2022' >2022</option>
                 <option value='2018' >2018</option>
                 <option value='2014' >2014</option>              
@@ -38,7 +31,8 @@ function SelectYear({ handleSearch }){
                 <option value='1938' >1938</option>
                 <option value='1934' >1934</option>
                 <option value='1930' >1930</option>
-            </select></label>
+            </select>
+            </div> 
             <div id="button">
                 <button id="button"
                     type="submit" 

@@ -13,21 +13,15 @@ function Home(){
     const [finalsToDisplay, setFinalsToDisplay] = useState({})
 
     useEffect(()=> {
-    fetch("http://localhost:8001/data?q" + query)
+    fetch("http://localhost:8001/data?q=" + query)
     .then((resp) => resp.json())
     .then((data) => setTournaments(data))
     }, [query])
 
     function handleSearch(e) {
         e.preventDefault()
-        setQuery(e.target.value)
-        console.log(query)
-        const finalist = tournaments.map((tournament) => tournament.year === query)
-        console.log(finalist) 
-        setGames([...games, finalist])
-        console.log(games)
+        setQuery(e.target.value) 
     }
-    /**/
 
     return(
         <div>
