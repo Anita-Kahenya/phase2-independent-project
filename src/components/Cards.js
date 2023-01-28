@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
     const {year,champion,runner_up} = tournament;
     
@@ -18,12 +18,12 @@ function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
     }, [])*/
     return(
         
-        <div className='col-sm-2'>
-            <span  className="card" onClick={handleClick}>
+        <div  className="card finalsCard" onClick={handleClick}>
+            <div className="content">
                 <h1>{year}</h1>
-                <h2><span><img src='https://flagcdn.com/16x12/ke/png' alt='flag'></img></span>{champion}</h2>Vs
-                <h2>{runner_up}</h2>
-            </span>
+                <h2>{runner_up}</h2>Vs
+                <h2>{champion}</h2>
+            </div>
         </div>   
     )
 }
