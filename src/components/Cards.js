@@ -20,7 +20,7 @@ function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
         
         <div  className="card finalsCard" onClick={handleClick}>
             <div className="content">
-                <h1>{year}</h1>
+                <h1><span><img src="https://flagpedia.net/data/flags/h120/zawebp"></img></span>{year}</h1>
                 <h2>{runner_up}</h2>Vs
                 <h2>{champion}</h2>
             </div>

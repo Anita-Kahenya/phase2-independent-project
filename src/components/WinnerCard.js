@@ -3,6 +3,7 @@ import React from "react";
 function WinnerCard({ finals, setDisplay }){
     const {year, champion, runner_up, third_place, host, teams, matches_played, goals} = finals
     return(
+        <div id="container">
         <div className="card">
             <span className="details" >
                                 <h1>WORLD CUP {year}</h1>
@@ -18,6 +19,7 @@ function WinnerCard({ finals, setDisplay }){
             <div>
                 <button className="btn btn-outline-danger" onClick={() =>{setDisplay("matches")}}><i class="fa-solid fa-arrow-right-to-bracket"></i></button> 
             </div> 
+       </div>
        </div>
     )
 }

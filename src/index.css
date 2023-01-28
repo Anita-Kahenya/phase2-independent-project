@@ -62,18 +62,20 @@
   top: -102px;
   right: 8px;
   font-size: 5em;
-  color: rgba(14, 14, 13, 0.637);
+  color: rgba(14, 14, 13, 0.582);
   pointer-events: none;
 }
 
-
-.mainCard{
-  /*background-image: url("img/pic-1.jpeg");
+#bold{
+  color: blue;
+}
+/*.mainCard{
+  background-image: url("img/pic-1.jpeg");
   background-color: rgb(0, 0, 0, 0.5);
   background-size: cover;
   background-blend-mode: darken;
-  animation: change 10s infinite ease-in-out;*/
-}
+  animation: change 10s infinite ease-in-out;
+}*/
 /*@keyframes change{
   0%
   {
