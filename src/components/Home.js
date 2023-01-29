@@ -18,12 +18,12 @@ function Home(){
     method: "GET",
     headers: {'X-Master-Key': '$2b$10$2z8TQNznBtftDC4YRxGzMOGhVhPr3LDk.4DCB/RPtKWVNDFhcI4TK'},
     contentType: 'application/json',
-    }
-    )
+    })
     .then((resp) => resp.json())
     .then((data) => setTournaments(data))
     }, [query])
-
+    
+    console.log(tounaments)
     function handleSearch(e) {
         e.preventDefault()
         setQuery(e.target.value) 
