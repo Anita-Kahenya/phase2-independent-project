@@ -23,7 +23,7 @@ function Home(){
     .then((data) => setTournaments(data))
     }, [query])
     
-    console.log(tounaments)
+    console.log(tournaments)
     function handleSearch(e) {
         e.preventDefault()
         setQuery(e.target.value) 
