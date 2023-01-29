@@ -8,15 +8,20 @@ function Home(){
     const [tournaments, setTournaments] = useState([])
     //query for searchbar
     const [query, setQuery] = useState("")
-    
+
     //setting selected card to display
     const [display, setDisplay] = useState("matches")
     const [finalsToDisplay, setFinalsToDisplay] = useState({})
 
     useEffect(()=> {
-    fetch("http://localhost:8001/data?q=" + query)
+    fetch("https://api.jsonbin.io/v3/b/63d6bb1face6f33a22cca359/?q=" + query, {
+    method: "GET",
+    headers: {'X-Master-Key': '$2b$10$2z8TQNznBtftDC4YRxGzMOGhVhPr3LDk.4DCB/RPtKWVNDFhcI4TK'},
+    contentType: 'application/json',
+    }
+    )
     .then((resp) => resp.json())
-    .then((data) => setTournaments(data))
+    .then((data) => console.log(data))
     }, [query])
 
     function handleSearch(e) {
