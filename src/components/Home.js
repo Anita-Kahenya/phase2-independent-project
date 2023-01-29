@@ -4,11 +4,12 @@ import Finalists from "./Finalists";
 import WinnerCard from "./WinnerCard";
 
 function Home(){
-
+    //setting state for api data
     const [tournaments, setTournaments] = useState([])
-    const [games, setGames] = useState([])
+    //query for searchbar
     const [query, setQuery] = useState("")
     
+    //setting selected card to display
     const [display, setDisplay] = useState("matches")
     const [finalsToDisplay, setFinalsToDisplay] = useState({})
 

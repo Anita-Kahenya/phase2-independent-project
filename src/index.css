@@ -81,13 +81,12 @@ form{
   top: -102px;
   right: 8px;
   font-size: 5em;
-  color: rgba(14, 14, 13, 0.623);
+  color: rgba(14, 14, 13, 0.795);
   pointer-events: none;
   font-weight: bolder;
 }
 
 /*WinnerCard styling*/
-
 .container #card{
   box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5) ;
   display: flex;
@@ -119,6 +118,41 @@ form{
   align-self: center;
 }
 /*styling about page*/
+.about{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #56042C;
+}
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: aliceblue;
+}
+.trophyImg{
+  padding-top: 20px;
+  padding-right: 50px;
+}
+.aboutPage h1{
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 3em;
+  color: rgba(255, 208, 0, 0.911);
+}
+.aboutPage h2{
+  font-family: serif;
+  font-weight: bolder;
+  color: rgba(255, 208, 0, 0.911);
+}
+.aboutPage h5{
+  font-family: serif;
+  font-weight: bold;
+  color: rgb(90, 252, 238);;
+}
 #bold{
   color: blue;
 }
@@ -129,7 +163,7 @@ form{
     }
     20%
     {
-      background-image:url("https://i.pinimg.com/564x/f8/33/9b/f8339bfac462c945afa403cb2ac1e004.jpg");
+      background-image:url("https://i.pinimg.com/564x/80/25/ea/8025eae6af7b97de5c925dc0d2df46ff.jpg");
     }
     40%
     {

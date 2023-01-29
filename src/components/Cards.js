@@ -1,23 +1,17 @@
-import { useState } from "react";
 function Cards({tournament, setDisplay, setFinalsToDisplay, container}){
     const {year,champion,runner_up} = tournament;
     
+    //display clicked card
     function handleClick(){
         if(!container) {
             setFinalsToDisplay(tournament)
-            setDisplay("specs")
+            setDisplay("wrong")
         } else {
             console.log(tournament)
         }
     }
-    const [flag, setFlag] = useState("")
-    /*useEffect(()=>{
-        fetch(`https://restcountries.com/v2/name/{name}?fullText=true`)
-        .then((res) => res.image())
-        .then((data) => setFlag(data))
-    }, [])*/
+    
     return(
-        
         <div  className="card finalsCard" onClick={handleClick}>
             <div className="content">
                 <h1>{year}</h1>

@@ -1,11 +1,11 @@
 ## TITLE
-World Cup Finals Statistics
+World Cup History Finder
 
 ## AUTHOR : Name Date
 Name: Mark Kantet Sangiriaki 27/1/2023
 
 ## About
-A website for football fans where you can look up statistics for all past world cups. 
+A website for football fans where you can view statistics for all past world cups. 
 Click on the world cup final card and view the stats.
 
 ## Live Project Link
@@ -58,6 +58,7 @@ In the terminal on the project's directory run 'json-server --watch db.json --po
 HTML
 CSS
 Reactjs
+Javascript
 
 ## Contact Information
 Email : markkantet@gmail.com
