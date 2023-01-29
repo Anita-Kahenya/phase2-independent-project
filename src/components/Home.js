@@ -24,7 +24,7 @@ function Home(){
     }
 
     return(
-        <div>
+        <div className="main">
             <SelectYear tournaments = {tournaments} handleSearch={handleSearch}/>
             {
                 display === "matches" ? 

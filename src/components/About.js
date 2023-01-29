@@ -3,9 +3,10 @@ import React from "react";
 function About() {
   return (
     <div className="about">
-      <div>
+      <div className="trophyImg">
         <img src="https://w7.pngwing.com/pngs/68/154/png-transparent-fifa-world-cup-trophy-2022-fifa-world-cup-2018-fifa-world-cup-2014-fifa-world-cup-2010-fifa-world-cup-unofficial-football-world-championships-football-sport-sports-football-player-thumbnail.png" alt="world cup png"></img>
       </div>
+      <div className="aboutPage">
       <h1>FIFA WORLD CUP</h1>
       <h2>HISTORY</h2>
       <p>
@@ -37,6 +38,7 @@ function About() {
       <p>
         Players 21 years old and younger are eligible for the Best Young Player award.
       </p>
+      </div>
     </div>
   )
 }

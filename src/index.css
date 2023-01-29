@@ -1,26 +1,38 @@
 
 .navbar{
-  background-color: #56042C;
+  background-color: #040a0ce0;
 }
 .navbar-brand{
+  padding: 5px;
   font-family: serif;
   color: white;
 }
+.main{
+  min-height: 100vw;
+  background-color: #56042C;
+}
+form{
+  padding-top: 20px;
+}
 #searchBar{
-  padding: 10px;
-  background-color: #49BCE3;
+  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .search-field{
-  width: 80vw;
+  width: 85vw;
+}
+.label{
+  width: fit-content;
 }
 
-
-#button{
-  padding: 5px;
+.button{
+  padding-top: 2vw;
 }
+
 /*cards styling*/
 .container{
   position: relative;
@@ -31,7 +43,7 @@
   max-width: 100vw;
   flex-wrap: wrap;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.781);
+  max-height: fit-content;
 }
 .container .finalsCard{
   position: relative;
@@ -39,12 +51,11 @@
   height: 290px;
   margin: 15px;
   box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.5) ;
-  /*background-image: url("../../media/examples/lizard.png");*/
-  background: linear-gradient(to right bottom, #56042c9a, #49bce344);
+  background: linear-gradient(to right bottom, #57032cef, #49bce35e);
+  backdrop-filter: blur(2px);
   justify-content: center;
   text-align: center;
-  color: rgba(255, 208, 0, 0.897);
-  backdrop-filter: blur(2px);
+  color: rgba(255, 208, 0, 0.911);
   transition: 0.5s;
 }
 
@@ -55,6 +66,7 @@
 }
 /*appear on hover */
 .finalsCard .content{
+  font-family: sans-serif;
   transform:translateY(0px);
   opacity: 0;
   transition: 0.5s;
@@ -69,43 +81,70 @@
   top: -102px;
   right: 8px;
   font-size: 5em;
-  color: rgba(14, 14, 13, 0.582);
+  color: rgba(14, 14, 13, 0.623);
   pointer-events: none;
+  font-weight: bolder;
 }
 
+/*WinnerCard styling*/
+
+.container #card{
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://i.pinimg.com/564x/15/98/73/159873cafc9f9aa8480c1e4edad632ac.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  height: 30vw;
+  width: 40vw;
+  animation: change 40s infinite ease-in-out;
+}
+.details{
+  font-family: 'LibreCaslonTextRegular';
+  font-weight: bolder;
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+.details h1{
+  font-family: 'PumpkinRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  color: rgba(255, 208, 0, 0.911);
+}
+.returnButton{
+  align-self: center;
+}
+/*styling about page*/
 #bold{
   color: blue;
 }
-/*.mainCard{
-  background-image: url("img/pic-1.jpeg");
-  background-color: rgb(0, 0, 0, 0.5);
-  background-size: cover;
-  background-blend-mode: darken;
-  animation: change 10s infinite ease-in-out;
-}*/
-/*@keyframes change{
-  0%
-  {
-    background-image:url("./images/pic-1.jpeg");
-  }
-  20%
-  {
-    background-image:url("./images/pic-2.jpeg");
-  }
-  40%
-  {
-    background-image:url("./images/pic-3.jpeg");
-  }
-  60%
-  {
-    background-image:url("./images/pic-4.jpeg");
-  }
-  80%
-  {
-    background-image:url("./images/pic-5.jpeg");
-  }
-  100%
-  {
-    background-image:url("./images/pic-6.jpeg");
-  }
-}*/
+@keyframes change{
+    0%
+    {
+      background-image:url("https://i.pinimg.com/564x/15/98/73/159873cafc9f9aa8480c1e4edad632ac.jpg");
+    }
+    20%
+    {
+      background-image:url("https://i.pinimg.com/564x/f8/33/9b/f8339bfac462c945afa403cb2ac1e004.jpg");
+    }
+    40%
+    {
+      background-image:url("https://i.pinimg.com/736x/6c/b1/5b/6cb15bff184a563cd94d16efdd0cb819.jpg");
+    }
+    60%
+    {
+      background-image:url("https://i.pinimg.com/564x/19/82/64/198264d06bf9916bcb573e0d33f6ce08.jpg");
+    }
+    80%
+    {
+      background-image:url("https://i.pinimg.com/736x/af/84/1c/af841c9cfa821a5e0b5c00b9ff23e725.jpg")
+    }
+    100%
+    {
+      background-image:url("https://i.pinimg.com/564x/15/98/73/159873cafc9f9aa8480c1e4edad632ac.jpg");
+    }
+}
