@@ -12,7 +12,6 @@ function Finalists({tournaments, setDisplay, setFinalsToDisplay}){
     return(
         <>
             <div className="container">
-                <h1>times</h1>
             {finalistDisplay}
             </div>
         </>

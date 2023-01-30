@@ -14,19 +14,20 @@ function Home(){
     const [finalsToDisplay, setFinalsToDisplay] = useState({})
 
     useEffect(()=> {
-    fetch("https://api.jsonbin.io/v3/b/63d6bb1face6f33a22cca359/?q=" + query, {
+    fetch("https://api.jsonbin.io/v3/b/63d6bb1face6f33a22cca359/?q=" + query , {
     method: "GET",
     headers: {'X-Master-Key': '$2b$10$2z8TQNznBtftDC4YRxGzMOGhVhPr3LDk.4DCB/RPtKWVNDFhcI4TK'},
     contentType: 'application/json',
     })
     .then((resp) => resp.json())
-    .then((data) => setTournaments(data))
+    .then((data) => setTournaments(data.record.data), console.log(query))
     }, [query])
     
     console.log(tournaments)
-    function handleSearch(e) {
+    const handleSearch=(e)=> {
         e.preventDefault()
-        setQuery(e.target.value) 
+        setQuery(e.target.value)
+        console.log(setQuery)
     }
 
     return(
