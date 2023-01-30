@@ -9,7 +9,7 @@ A website for football fans where you can view statistics for all past world cup
 Click on the world cup final card and view the stats.
 
 ## Live Project Link
-// 
+//https://phase2-independent-project-git-main-mark500-lang.vercel.app/
 
 ## Getting Started with Create React App
 This project was bootstrapped with Create React App.
